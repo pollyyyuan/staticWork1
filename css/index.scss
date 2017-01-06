@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/*模版部分*/
+@import 'index/template.scss';
+/*头部header部分*/
+@import 'index/header.scss';
+/*登录部分*/
+@import 'index/logo.scss';
+/*广告部分*/
+@import 'index/banner.scss';
+/*热门内容部分*/	
+@import 'index/popular.scss';
+/*通用部分*/
+@import 'index/content.scss';
+/*movies的内容部分*/
+@import 'index/movies.scss';
+/*group的中间部分*/
+@import 'index/group.scss';
+/*readBooks的中间部分*/
+@import 'index/readBook.scss';
+/*musics的中间部分*/
+@import 'index/musics.scss';
+/*fair的中间部分*/
+@import 'index/fair.scss';
+/*photograph的中间部分*/
+@import 'index/photograph.scss'; 
+/*local的中间部分*/
+@import 'index/local.scss';
+/*尾部部分*/
+@import 'index/footer.scss';
+
+

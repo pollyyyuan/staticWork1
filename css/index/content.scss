@@ -1,0 +1,106 @@
+/*副文字标题部分*/
+.subhead{
+	padding-top:6px;
+	padding-bottom:16px;
+}
+/*公共模板部分*/
+$bgc:#F7F7F7;
+.template{
+	background-color: #fff;
+	padding-top:38px;
+	padding-bottom: 46px;
+}
+.template:nth-of-type(2n){
+	background-color: $bgc;
+}
+
+/*公共内容部分*/
+/*nav是左边的导航，content是中间内容部分，hots是右边的热点部分*/
+/*左边导航部分,所有模块样式相同*/
+.t-nav{
+	$navSize:13px;
+	$navTitleSize:24px;
+	@extend %fl;
+	width: 120px;
+	li{ 
+		font-size:$navSize;
+		padding:8px 0;
+	}
+	.nav-title{
+		padding-top:2px;
+		margin-bottom:12px;
+		font-size: $navTitleSize;
+		font-weight:400;
+	}
+}
+/*中间的内容部分，只提取公共样式，因每个模块内容差距大*/
+/*中间的部分的图片+两行文字描述样式*/
+.t-content{
+$sColor:#999999;
+$contentlineHeight:23px;
+$btnColor:#fff;
+	@extend %fl;
+	width: 564px;
+	li{
+    	@extend %fl;
+		b {
+  			display: block;
+		}
+		s{
+     		color: $sColor; 
+     		display: block;  
+		}
+		button{
+   			width:68px;
+   			height: 23px;
+   			line-height: $contentlineHeight;
+   			font-weight: 400;
+    		color: $btnColor;
+		}
+	}
+}
+/*右边部分，该部分还包含几个模块，用t命名，所有的都可提取 */
+.t-hots{
+$h5Size:13px;
+$h5lineHeight:13px;
+$aColor:#333333;
+	@extend %fl;
+	width:266px;
+	.t-keywords{
+  		width: 240px;
+  		margin-bottom: 24px;
+ 	 	li{
+    		padding-bottom: 4px;
+    		@extend %fl;
+    		width: 48px;
+		}
+	}
+	.t-classic {
+		h5{
+			font-size:$h5Size;
+			line-height:$h5lineHeight;
+    		padding-bottom:6px;
+    		padding-top:5px;
+			a{
+    			color: $aColor;
+			}
+		}
+		ul{
+    		margin-bottom:11px;
+    		li{
+    			@extend %fl;
+   				padding-right:12px;
+			}
+		}
+	}
+	.t-tabs{
+		ul{
+			padding:9px 0;
+			li{
+				@extend %fl;
+				margin-right:12px;
+				line-height:21px;	
+			}
+		}
+	}
+}

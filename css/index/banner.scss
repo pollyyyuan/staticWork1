@@ -1,0 +1,21 @@
+.banner{
+$closeBg:rgba(0, 0, 0, 0.3);
+$closeColor:#fff;
+$closelineHeight:20px;
+    width: 950px;
+    height: 90px;
+    padding-top: 35px;
+    @extend %pr;
+    span{
+        width: 32px;
+        height: 20px;
+        background: $closeBg;
+        @extend %pa;
+        bottom:0;
+        right:0;
+        line-height:$closelineHeight;
+        font-weight:700;
+        color: $closeColor;
+        text-align:center;
+    }
+}

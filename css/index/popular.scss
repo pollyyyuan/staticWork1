@@ -1,0 +1,74 @@
+.popular-content{
+$color:#3377AA;
+$blineHeight:16px;
+$sColor:#999999;
+    background-color: #fff;
+    padding-bottom: 66px;
+    color: $color;
+    .pc-content{
+        @extend %fl;
+        .subhead{
+            padding-top: 10px;
+            padding-bottom:18px;
+        }
+        .content-pics{
+            width: 360px;
+            @extend %fl;
+            li{
+                @extend %fl;
+                width: 170px;
+                margin-right: 10px;
+                margin-bottom: 13px;
+                img{
+                    width: 170px;
+                    height: 170px;
+                }
+                b{
+                    line-height:$blineHeight;
+                }
+                s{
+                    color:$sColor;        
+                }
+            }
+        }
+        .content-list{
+        $pColor:#666666;
+            @extend %fl;
+            padding-left: 19px;
+            width: 275px;
+             li{
+                margin-bottom: 10px;
+                s{
+                    display: block;     
+                    color: $sColor;
+                }
+                p{
+                    color: $pColor;
+                }
+            }
+        }
+    }
+    .pc-activity{
+        padding-top:16px;
+        @extend %fl;
+        padding-left: 31px;
+        width: 225px;
+        .activity-pic{
+            img{
+                width: 265px;
+                height: 110px;
+            }
+        }
+        .subhead{
+            padding-top:14px;
+            padding-bottom:12px;
+        }
+        li{
+            margin-bottom:10px;
+            s{
+                display: block;     
+                color: $sColor;
+            }
+        } 
+    }
+}

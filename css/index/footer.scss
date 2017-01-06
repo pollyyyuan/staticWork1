@@ -1,0 +1,25 @@
+.footer{
+$bannerColor:#999999;
+    .banner{
+        padding-top:32px;
+        color: $bannerColor;
+    }
+    .foot{
+        margin-top:35px;
+        padding-top:18px;
+        border-top:1px dashed  $bannerColor;
+        .about{
+            float:left;
+        }
+        .other{
+            float:right;
+            padding-right:2px;
+            li{
+                @extend %fl;
+            }
+            li:nth-child(2n){
+                padding:0 4px;
+            }
+        }
+    }
+}

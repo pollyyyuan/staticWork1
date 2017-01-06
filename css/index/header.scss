@@ -1,0 +1,67 @@
+.header{
+$searchBorder:1px solid #C3C3C3;
+$searchBtnImg:url("../imgs/search.png");
+$navLogoImg:url("../imgs/nav_logo.png");
+    height: 33px;
+    padding-top:30px;
+    padding-bottom: 26px;
+    .logo{
+        @extend %fl;
+        width: 154px; 
+    }
+    .search{
+        @extend %fl;
+        padding-top: 1px;
+        padding-left: 29px;
+        width: 272px;
+        
+        input{
+            float: left;
+            width: 241px;
+            height: 30px;
+            padding-left: 5px;
+            border:$searchBorder;
+            border-right:0;
+            border-radius:0;
+        }
+        button{
+            @extend %fl;
+            padding-top:9px;
+            width: 24px;
+            height: 32px;
+            background-color: #fff;
+            border:$searchBorder;
+            border-left:0;
+            border-radius:0;
+            background:$searchBtnImg no-repeat;
+            background-origin:content-box;
+        }
+    }
+    .mainnav{
+    $paddingLeft:20px;
+    $width:40px;
+    $num:8;
+        @extend %fl;
+        padding-left: 13px;
+        li{
+            @extend %fl;
+            padding-left: 20px;
+            width: 40px;
+            a{
+                display: block;
+                background:$navLogoImg no-repeat;
+                width: 40px;
+                height: 33px; 
+            }
+            @for $i from 0 to ($num){
+   				&:nth-child(#{$i+1}) a{
+   					background-position:-($paddingLeft + $width) * $i 5px;
+   				}
+   			}
+   			&:nth-child(#{$num}) a{
+   				width: 42px;
+   			}
+        }
+    }
+
+}

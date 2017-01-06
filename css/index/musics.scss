@@ -1,0 +1,76 @@
+.musics{
+$aColor:#555D53;
+$navColor:#F38C00;
+	a{
+    	color: $aColor;
+    	@include hover;
+	}
+    .t-content{
+    $slineHeight:180%;
+	$sColor:#555D53;
+	$iColor:#F9C644;
+        li{
+            width: 132px;
+            height: 210px;
+            img{
+                width: 85px;
+                height: 80px;
+                padding:0 25px 8px 23px; 
+            }
+            s{
+                line-height: $slineHeight;
+                color: $sColor;
+                text-align: center;
+            }
+            i{
+                color:$iColor;
+                padding-left:26px;
+                img{
+                    height:11px;
+                    width:55px;
+                    padding:0;
+                    padding-bottom:4px;
+                }
+            }
+        }
+    }
+    .nav-title{
+    	a{
+   		    color: $navColor;
+    	}
+	}
+	.imgLink-link{
+	$spanColor:#111;
+	$sColor:#999999;
+    	height: 78px;
+    	.link-img{
+    		@extend %fl;
+    		height: 78px;
+    		margin-right:8px;
+    		img{
+    			width: 48px;
+    			height: 48px;    			
+    		}
+    	}
+    	span{
+    		@extend %fl;
+    		height: 73px;
+    		width: 21px;
+    		padding-top:5px;
+    		color: $spanColor;
+    	}
+    	.link-content{
+    		@extend %fl;
+    		s{
+    			display: block;  
+    			color: $sColor;
+    		}
+    		s:nth-child(1){
+    			padding-bottom:2px;
+    		}
+    	}
+	}
+    .banner{
+        padding-top:0;
+    }
+}

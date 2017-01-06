@@ -1,0 +1,72 @@
+.movies{
+$bColor:#533333;
+$sColor:#E39042;
+$sSize:10px;
+$slineHeight:11px;
+$btnBgc:#1C8BD0;
+$btnColor:#fff;
+$btnlineHeight:23px;
+$btnActive:#047FCB;
+    .content-movies{
+        ul{
+            padding-left:16px;
+            width: 498px;
+            display:flex;
+            justify-content:space-between;
+            flex-wrap:wrap;
+            li{
+                width: 100px;
+                margin-bottom:40px;
+                img{
+                    width: 100px;
+                    height: 142px;
+                }
+                b{
+                    color: $bColor;
+                    margin-top:13px;
+                    text-align: center;
+                    @include wrap;
+                }
+                s{
+                    display: block;
+                    padding:10px;
+                    height: 11px;
+                    color: $sColor;
+                    font-size:$sSize;
+                    line-height: $slineHeight;
+                    img{
+                        height: 11px; 
+                        width: 55px; 
+                    }
+                }
+                button{
+                    width: 68px;
+                    height: 23px;
+                    margin-left: 16px;
+                    background-color: $btnBgc;
+                    color: $btnColor;
+                    line-height:$btnlineHeight;
+                    text-align: center;
+                    &:hover{
+                        background-color: $btnActive;
+                    }
+                }
+            }
+        }
+    }
+    .hots-txtLinks{
+    $lineHeight:30px;
+    $border:1px solid #EAEAEA;
+        li{
+            height: $lineHeight;
+            line-height:$lineHeight;
+            border-bottom:$border;
+            a{
+                padding-left:8px;
+            }
+        }
+    }
+    .banner{
+        padding-top:30px;
+    }
+}

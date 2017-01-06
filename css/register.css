@@ -1,0 +1,166 @@
+@charset "UTF-8";
+
+.logo{
+	height: 100px;
+	width: 100%;
+}
+.form{
+	width: 654px;
+	float: left;
+	font:12px/28px "microsoft yahei ";
+}
+.form h1{
+	height: 28px;
+	font:700 26px/28px "microsoft yahei";
+	margin-bottom: 30px;
+}
+.form li{
+	padding-bottom:15px;
+	overflow: hidden;
+}
+.form label{
+	float: left;
+	font:14px/28px "microsoft yahei";
+	width: 62px;
+	text-align: right;
+	color: #111111;
+}
+.form s,.form i{
+	color: #7F7F7F;
+}
+.form i{
+	padding-left: 76px;
+	display: block;
+	line-height: 20px;
+	height: 20px;
+}
+.form s{
+	margin-left: 16px;
+}
+.form span{
+	color: #111111;
+}  
+.form .b1{
+	margin-left: 12px;
+	color: #FE2617;
+	position: relative;
+}
+.form .b2{
+	margin-left: 12px;
+	color: #111111;
+}
+.form .b3{
+	margin-left: 12px;
+	color:#C9C9C9;
+	position: relative;
+}
+.form .b1:before,.form .b2:before,.form .b3:before{
+	content:'';
+	position: absolute;
+	top:3px;
+	left:-14px;
+	margin-left: -2px;
+	width: 0;
+	height: 0;
+	border-width: 3px 7px;
+	border-style: solid;
+	border-color:transparent;
+	border-right-color: #FE2617;
+
+}
+.form .b2:before
+{
+	border-color: #fff;
+}
+.form .b3:before
+{
+	border-right-color: #C9C9C9;
+}
+.form1 input{
+	margin-left: 16px;
+	float: left;
+	width: 205px;
+	height: 28px;
+	padding-left: 5px;
+	border:1px solid #C9C9C9;
+	border-radius:3px;
+}
+.form .focused{
+	border-color: #A9A9A9;
+}
+.form2 .phone{
+	float: left;
+	margin-left:16px;
+}
+.phone button{
+	float: left;
+	width: 40px;
+	height: 30px;
+	background-color: #fff;
+	border:1px solid #C9C9C9;
+	border-right:0;
+	border-bottom-left-radius: 3px;
+	border-top-left-radius: 3px;
+	text-align: right;
+	cursor:pointer;
+}
+.phone button span{
+	padding-right:8px;
+	border-right:1px solid #C9C9C9;
+}
+.phone input{
+	float: left;
+	width: 165px;
+	height: 28px;
+	border:1px solid #C9C9C9;
+	border-left: 0;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	padding-left: 5px;
+}
+.form2 li:nth-child(4) input{
+	margin-left:15px;
+	margin-top:1px;
+	float: left;
+	width: 100px;
+	padding-left:5px;
+	height: 28px;
+	border:1px solid #C9C9C9;
+
+}
+.form2 li:nth-child(4) button{
+	height: 32px;
+	width: 101px;
+	margin-left: 3px;
+	float: left;
+	border:1px solid #C9C9C9;
+	background-color: #fff;
+	text-align: center;
+	font:13px/32px "microsoft yahei";
+	border-radius: 3px;
+	cursor: pointer;
+}
+.form2 input[type='checkbox']{
+	margin-left:75px;
+	width: 14px;
+	height: 14px;
+}
+.form2 button:only-child{
+	width: 86px;
+	height: 33px;	
+	margin-left: 77px;
+	font:14px/32px "microsoft yahei";
+	border-radius: 3px;
+	cursor:pointer;
+}
+.btn-abled{
+		border:1px solid #528641;
+		color: #FFF;
+		background-color: #3FA156;
+}
+.form2 .btn-disabled{
+	border:1px solid #B9B9B9;
+	background-color: #F0F0F0;
+	color: #999999;
+	
+}

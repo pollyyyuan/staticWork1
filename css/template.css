@@ -1,0 +1,30 @@
+/*通用头部开始*/
+.template-header{
+
+}
+.template-header .template-nav{
+	height: 28px;
+	background-color: #545652;
+}
+.template-header .template-top{
+	height: 114px;
+	background-color: #F0F3F5;
+}
+.template-top .template-top-search{
+	height: 74px;
+}
+.template-top .template-top-nav{
+	height: 39px;
+	border-top:1px solid #E3EBEC;
+}
+/*通用正文*/
+.template-main{
+	padding-top: 40px;
+}
+.template-content .template-aside{
+	float: right;
+	width: 300px;
+}
+.template-main .template-content{
+	margin-right: 350px;
+}

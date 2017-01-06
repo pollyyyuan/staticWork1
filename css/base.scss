@@ -1,0 +1,17 @@
+@import '../../../scss/init';
+$w:952px;
+$font:12px Helvetica,Arial,sans-serif;
+$lineHeight:1.62;
+$aActive:#fff;
+/*基础版心*/
+.w{width: $w;margin:0 auto;}
+/*基础*/
+html,body{background-color: #fff;color: #111;}
+input,button{border-radius:3px;font:$font;}
+button{cursor: pointer;}
+/*文字基础*/
+body{font: $font;line-height: $lineHeight;}
+a:link {color:#37a;text-decoration:none}
+a:visited {color:#669;text-decoration:none}
+a:hover {color:$aActive;text-decoration:none;background:#37a}
+a:active {color:#fff;text-decoration:none;background:#f93}

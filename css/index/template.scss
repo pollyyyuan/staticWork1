@@ -1,0 +1,30 @@
+%fl{
+	float:left;
+}
+%fr{
+	float:right;
+}
+%pr{
+	position:relative;
+}
+%pa{
+	position:absolute;
+}
+%white{
+	&:hover{
+		color: #fff;
+	}
+}
+@mixin borderRadius($px:3px){
+    border-radius:$px;
+}
+@mixin wrap{
+    text-overflow:ellipsis;
+    overflow: hidden;
+    white-space:nowrap;
+}
+@mixin hover($white:#fff){
+	&:hover{
+		color:$white;
+	}
+}

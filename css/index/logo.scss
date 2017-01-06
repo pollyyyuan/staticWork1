@@ -1,0 +1,180 @@
+.login-bg{
+$bgAll:#F1FAF1 url("../imgs/login_bg.png") no-repeat top right;
+    height: 179px;
+    background:$bgAll;
+    @extend %pr;
+    img{
+        @extend %fl;
+        width: 394px;
+        height: 179px;
+    }
+    .login-center{
+    $h1Size:25px;
+	$h5Size:12px;
+	$btnBgc:#00B51D;
+	$btnColor:#fff;
+        @extend %fl;
+        padding-left: 35px;
+        padding-top: 36px;
+        @extend %pr;
+        h1{
+            padding-left:1px;
+            font-size:$h1Size;
+            font-weight:700;
+            span{
+                padding-left:5px;
+                font-size:$h1Size - 3;   
+            }  
+        }
+        h5{
+            margin-top: 10px;
+            font-size:$h5Size;
+            font-weight:600;    
+        }
+        button{
+            margin-left:1px ;
+            margin-top: 23px;
+            height: 30px;
+            width: 114px;
+            background-color: $btnBgc;
+            color: $btnColor;
+        }
+        #erWeiMa{
+        $bColor:#666666;
+        $blineHeight:46px;
+            img{
+                width: 30px;
+                height: 30px;
+                @extend %pa;
+                left: 155px;
+                top: 128px;
+                padding:0;
+            }
+            .erweima{
+                @extend %pa;
+                width:160px;
+                height: 206px;
+                padding:20px 20px 0 20px;
+                border:1px solid #4A480D;
+                @include borderRadius(2px);
+                background-color: #fff;
+                left: 155px;
+                top: 106px;
+                z-index:10;
+                display:none;
+                img{
+                    @extend %pr;
+                    width: 160px;
+                    height: 160px;
+                }
+                b{
+                    color:$bColor;
+                    line-height:$blineHeight;
+                }
+            }
+        }
+    }
+    .login{
+$inputBorder:1px solid #DBE5DB;
+$bSize:11px;
+$blineHeight:30px;
+$bColor:#cccccc;
+$btnBgc:#30A080;
+$btnActive:#2A8C70;
+$spanColor:#666666;
+$linkIcon:url("../imgs/link_icon.png");
+@mixin txt{
+    margin-top:4px;
+    width: 270px;
+    height: 30px;
+}
+        @extend %fl;
+        width: 271px;
+        padding-left: 100px;
+        padding-top: 24px;
+        .login-txt{
+            @include txt;
+            input{
+                padding-left:8px;
+                width: 260px;
+                height: 30px;
+                border:$inputBorder;
+            }
+        }
+        .login-pwd{
+            @include txt;
+            input{
+                @extend %fl;
+                padding-left:8px;
+                height: 30px;
+                border:$inputBorder;
+                border-right:0;
+                width: 221px;
+                @include borderRadius(3px 0 0 3px);
+            }
+            b{
+                background-color: #fff;
+                font-size:$bSize;
+                line-height:$blineHeight;
+                color: $bColor;
+                @extend %fl;
+                padding-left: 2px;
+                width: 37px;
+                height: 30px;
+                border:$inputBorder;
+                border-left:0;
+                cursor: pointer;
+                @include borderRadius(0 3px 3px 0);
+            }
+        }
+        button{
+            margin:0;
+            margin-top: 6px;
+            width: 131px;
+            height: 28px;
+            border:$inputBorder;
+            border-color: $btnBgc;
+            color: #fff;
+            background-color: $btnBgc;
+            &:hover{
+                background-color: $btnActive;
+            }
+        }
+        .register-btn{
+            background: transparent;
+            color: $btnBgc;
+            &:hover{
+                border-color: $btnActive;
+                color: $btnActive;
+            }
+        }
+        .login-info{
+       	$linkWidth:14px;
+            padding-top: 10px;
+            .remerberMe{
+                @extend %fl;
+                padding-top: 4px;
+                width: 14px;
+                height: 14px;
+            }
+            span{
+                padding-left: 2px;
+                @extend %fl;
+                color: $spanColor;
+                font-size: $bSize;
+            }
+            a{
+            	@extend %fr;
+                display: block;
+                margin-left: 6px;
+                margin-right: 2px;
+                height: 15px;
+                width: $linkWidth;
+                background:$linkIcon;
+            }
+            .weixin{
+            	background-position:-$linkWidth 0;
+            }
+        }
+    }
+}

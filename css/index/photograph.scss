@@ -1,0 +1,51 @@
+.photograph{
+$aColor:#837960;
+	a{
+    	color:$aColor;
+    	@extend %white;
+	}
+	.nav-title{
+		$aColor:#FF6666;
+		a{
+    		color:$aColor;
+    		@extend %white;
+		}
+	}
+	.t-content{
+		li{
+  			padding:0 10px 38px 0 ;
+  			div{
+  				width: 262px;
+    			height: 216px;
+    			img{
+    				width: 262px;
+    			}
+  			}
+		}
+	}
+	.t-hots{
+	$hSize:13px;
+	$hColor:#999999;
+		.t-keywords{
+			padding-bottom:8px;
+    		border-bottom:1px solid #DDDDDD;
+    		margin-bottom:9px;
+    		li{
+    			padding:6px 0;
+    		}
+		}
+		div:nth-child(5){
+			border-bottom:0;
+		}
+		h5{
+    		font-size:$hSize;
+    		line-height: $hSize;
+    		padding-top:6px;
+    		padding-bottom:9px;
+    		a{
+    			color: $hColor;
+    			@extend %white;
+    		}
+		}
+	}
+}

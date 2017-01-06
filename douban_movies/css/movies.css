@@ -1,0 +1,131 @@
+/*购票按钮*/
+.btn-buy{
+	width: 90px;
+	height: 24px;
+	color: #fff;
+	font:500 12px/24px 'microsoft yahei';
+	text-align: center;
+	background-color: #268DCD;
+}
+/*标题盒子*/
+.movies-buy-box{
+
+}
+.movies-buy-box .movies-title-box{
+	height: 26px;
+	padding-bottom: 8px;
+	border-bottom: 1px solid #EAEAEA;
+	line-height: 26px;
+}
+.movies-title-box h1.title-first{
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 600;
+}
+.movies-title-box a.title-a{
+	margin-left: 14px;
+	font-size: 13px;
+}
+.movies-title-box .page-number-box{
+	float: right;
+}
+.page-number-box .number-page{
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 14px;
+	color: #99667F;
+}
+.page-number-box .pre-next{
+	display: inline-block;
+}
+.pre-next .pre,.pre-next .next{
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	background-color: #6D98D2;
+	border-radius: 50%;
+	vertical-align: middle;
+	margin-right: 5px;
+	color: #fff;
+	line-height: 18px;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 700;
+	cursor: pointer;
+}
+.movies-buy-box .movies-buy-content{
+	width: 100%;
+	overflow: hidden;
+	height: 268px;
+	padding:18px 0;
+	position: relative;
+}
+.movies-buy-content .movies-buy-list{
+	position:absolute;
+	top:0;
+	left:0;
+}
+.movies-buy-list li{
+	float: left;
+	width: 128px;
+	margin:0 10px;
+	text-align: center;
+	position: relative;
+}
+.movies-buy-list .item-img{
+	height: 194px;
+	vertical-align: top;
+	width: 100%;
+}
+.item-img img{
+	width: 100%;
+}
+.movies-buy-list .item-h{
+	height: 22px;
+	font-size: 14px;
+	line-height: 24px;
+	white-space: nowrap;
+	color: #333333;
+	overflow: hidden;
+	text-overflow:ellipsis;
+}
+.movies-buy-list .item-star{
+	height: 11px;
+	margin:5px 0 12px 0;
+}
+.movies-buy-list .float-info-box{
+	position: absolute;
+	z-index: 1000;
+	background-color: #fff;
+	top:1px;
+	left: 100%;
+	padding:20px;
+	width:180px;
+	border:1px solid #DDDDDD;
+	margin-left: 8px;
+	text-align: left;
+	display: none;
+}
+.float-info-box .info-h{
+	font-size: 16px;
+}
+.info-h .info-h-year{
+	color: #B8AAC5;
+	padding-left: 8px;
+}
+.info-h .info-star{
+	margin:12px 0;
+}
+.info-h .info-other{
+
+}
+.info-other .other-floor1{
+	line-height: 20px;
+	height: 20px;
+	margin-bottom: 10px;
+}
+.info-other .other-floor2{
+	height: 20px;
+}
+
+
