@@ -59,13 +59,16 @@ $bgAll:#F1FAF1 url("../imgs/login_bg.png") no-repeat top right;
                 @include borderRadius(2px);
                 background-color: #fff;
                 left: 155px;
-                top: 106px;
+                top: 128px;
                 z-index:10;
                 display:none;
                 img{
                     @extend %pr;
                     width: 160px;
                     height: 160px;
+                    left:0;
+                    top:0;
+                    padding:0;
                 }
                 b{
                     color:$bColor;
@@ -145,6 +148,7 @@ $linkIcon:url("../imgs/link_icon.png");
             color: $btnBgc;
             &:hover{
                 border-color: $btnActive;
+                background-color: transparent;
                 color: $btnActive;
             }
         }
